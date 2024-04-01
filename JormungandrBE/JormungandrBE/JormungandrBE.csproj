@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Collections\Deck\Controllers\" />
+    <Folder Include="Collections\Deck\DTO\" />
+    <Folder Include="Collections\EventResult\Controllers\" />
+    <Folder Include="Collections\User\DTO\" />
+  </ItemGroup>
+
+</Project>
